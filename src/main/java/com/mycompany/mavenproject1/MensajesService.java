@@ -26,7 +26,10 @@ public class MensajesService {
         MensajesDAO.leerMensajesDB();
     }
     public static void borrarMensaje(){
-        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingresa id del mensaje a borrar");
+        int idMensaje = sc.nextInt();
+        MensajesDAO.borrarMensajeDB(idMensaje);
     }
     public static void editarMensaje(){
         
